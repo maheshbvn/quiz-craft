@@ -1,4 +1,4 @@
-# QuizCraft: Build, Play & Share
+# QuizCraft: A Comprehensive Tool for Building, Engaging, and Sharing Quizzes
 
 QuizCraft is a dynamic quiz application designed to enable users to create quizzes, share them with others, and participate in engaging quiz sessions. This project is currently under development and will feature advanced functionalities in the future.
 
