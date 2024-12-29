@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <h1>Welcome to the Quiz Platform</h1>
+        <div class="home-buttons">
+            <button class="btn" id="create-quiz-btn">Create a New Quiz</button>
+            <button class="btn" id="sample-quiz-btn">Try Sample Quiz</button>
+        </div>
+    </div>
+
+    <script>
+        // Linking to existing index.html (Sample Quiz)
+        document.getElementById('sample-quiz-btn').addEventListener('click', function() {
+            window.location.href = 'index.html';
+        });
+
+        // To create a new Quiz functionality for later use
+        document.getElementById('create-quiz-btn').addEventListener('click', function() {
+            alert("Create Quiz functionality coming soon!");
+            window.location.href = 'create-quiz.html';
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <h1>Create a New Quiz</h1>
+
+        <!-- Quiz Title Input -->
+        <div id="quiz-title-section">
+            <input type="text" id="quiz-title" placeholder="Enter quiz title" required>
+            <button class="btn" onclick="startQuizCreation()">Start Adding Questions</button>
+        </div>
+
+        <!-- Question Form -->
+        <div id="question-form-section" style="display:none;">
+            <div class="question-block">
+                <input type="text" id="question-text" placeholder="Enter your question" required>
+
+                <div class="option-group">
+                    <input type="text" placeholder="Option 1" class="option-input" required>
+                    <button type="button" class="correct-btn" onclick="toggleCorrect(this)">Mark as Correct</button>
+                </div>
+
+                <div class="option-group">
+                    <input type="text" placeholder="Option 2" class="option-input" required>
+                    <button type="button" class="correct-btn" onclick="toggleCorrect(this)">Mark as Correct</button>
+                </div>
+
+                <div class="option-group">
+                    <input type="text" placeholder="Option 3" class="option-input" required>
+                    <button type="button" class="correct-btn" onclick="toggleCorrect(this)">Mark as Correct</button>
+                </div>
+
+                <div class="option-group">
+                    <input type="text" placeholder="Option 4" class="option-input" required>
+                    <button type="button" class="correct-btn" onclick="toggleCorrect(this)">Mark as Correct</button>
+                </div>
+            </div>
+
+            <button type="button" class="btn" onclick="addQuestion()">Next Question</button>
+            <button type="button" class="btn" onclick="saveQuiz()" style="display:none;" id="save-quiz-btn">Save Quiz</button>
+        </div>
+    </div>
+    <script src="create-quiz.js"></script>
+</body>
+</html>
